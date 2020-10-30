@@ -12,7 +12,7 @@ public class ExcelDataProvider {
 	
 	@DataProvider(name="testData1")
 	public Object[][] getData() {
-		String excelPath = "E:\\SeleniumFramwork\\RestAssuredFramework\\data\\Testdata.xlsx";
+		String excelPath = "E:\\SeleniumFramwork\\RestAssured_Framework\\RestAssuredFramework\\data\\Testdata.xlsx";
 		Object data[][]=testData(excelPath,"Sheet1");
 		return data;
 		
