@@ -1,19 +1,11 @@
 package com.test;
 
-import static io.restassured.RestAssured.given;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
-
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 
 public class AuthenticationDemo {
 
 	
-	@BeforeClass
+	
 		public static String setup() {
 			
 //			Response res = given()

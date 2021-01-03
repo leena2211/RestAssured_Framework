@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 26 12:34:02 PDT 2020</td>
+<td>Started on:</td><td>Sat Jan 02 19:47:31 PST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5391 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3988 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,22 +75,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.DataDriven_Lib.test_post_01()'><b>test_post_01</b><br>Test class: com.test.DataDriven_Lib<br>Parameters: TC001, Valid request data 1, Sam, Engineer</td>
-<td><div><pre>java.lang.AssertionError: expected [204] but found [201]
-	at com.test.DataDriven_Lib.test_post_01(DataDriven_Lib.java:122)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128198660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1128198660'><pre>java.lang.AssertionError: expected [204] but found [201]
+<td title='com.test.DataDriven_Lib.test_post_01()'><b>test_post_01</b><br>Test class: com.test.DataDriven_Lib<br>Parameters: TC003, InvalidPass name as null, , HR, 400</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [201]
+	at com.test.DataDriven_Lib.test_post_01(DataDriven_Lib.java:118)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798239502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1798239502'><pre>java.lang.AssertionError: expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:652)
 	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.test.DataDriven_Lib.test_post_01(DataDriven_Lib.java:122)
+	at com.test.DataDriven_Lib.test_post_01(DataDriven_Lib.java:118)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -114,48 +114,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.test.DataDriven_Lib@437da279</td></tr>
-<tr>
-<td title='com.test.DataDriven_Lib.test_post_01()'><b>test_post_01</b><br>Test class: com.test.DataDriven_Lib<br>Parameters: TC002, Valid request data 2, Tom, Analyst</td>
-<td><div><pre>java.lang.AssertionError: expected [204] but found [201]
-	at com.test.DataDriven_Lib.test_post_01(DataDriven_Lib.java:122)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409215177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1409215177'><pre>java.lang.AssertionError: expected [204] but found [201]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at org.testng.Assert.assertEquals(Assert.java:662)
-	at com.test.DataDriven_Lib.test_post_01(DataDriven_Lib.java:122)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.test.DataDriven_Lib@437da279</td></tr>
+<td>com.test.DataDriven_Lib@6d026701</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -167,8 +126,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.test.DataDriven_Lib.test_getByUserID()'><b>test_getByUserID</b><br>Test class: com.test.DataDriven_Lib</td>
 <td></td>
-<td>2</td>
-<td>com.test.DataDriven_Lib@437da279</td></tr>
+<td>1</td>
+<td>com.test.DataDriven_Lib@6d026701</td></tr>
+<tr>
+<td title='com.test.DataDriven_Lib.test_post_01()'><b>test_post_01</b><br>Test class: com.test.DataDriven_Lib<br>Parameters: TC001, Valid request data 1, Sam, Engineer, 201</td>
+<td></td>
+<td>0</td>
+<td>com.test.DataDriven_Lib@6d026701</td></tr>
+<tr>
+<td title='com.test.DataDriven_Lib.test_post_01()'><b>test_post_01</b><br>Test class: com.test.DataDriven_Lib<br>Parameters: TC002, Valid request data 2, Tom, Analyst, 201</td>
+<td></td>
+<td>0</td>
+<td>com.test.DataDriven_Lib@6d026701</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,7 +1,7 @@
 package Utils;
 
+
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 public class ExcelDataProvider {
 	
@@ -12,14 +12,14 @@ public class ExcelDataProvider {
 	
 	@DataProvider(name="testData1")
 	public Object[][] getData() {
-		String excelPath = "E:\\SeleniumFramwork\\RestAssured_Framework\\RestAssuredFramework\\data\\Testdata.xlsx";
+		String excelPath = "C:\\Users\\Leena\\git\\RestAssured_Framework\\RestAssuredFramework\\data\\Testdata.xlsx";
 		Object data[][]=testData(excelPath,"Sheet1");
 		return data;
 		
 	}
 	
 	public Object[][] testData(String excelPath,String sheetName) {
-		ExcelUtils excel = new ExcelUtils(excelPath, sheetName);
+		ExcelUtils excel = new ExcelUtils(excelPath,sheetName);
 		
 		int rowCount = excel.getRowCount();
 		int colCount = excel.getColCount();

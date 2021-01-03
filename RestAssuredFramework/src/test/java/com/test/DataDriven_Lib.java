@@ -1,8 +1,8 @@
 package com.test;
-import Utils.ExcelDataProvider;
-import config.PropertiesFile;
 
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
 
 import org.json.simple.JSONObject;
@@ -13,22 +13,18 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-
-import io.restassured.RestAssured;
+import Utils.ExcelDataProvider;
+import config.PropertiesFile;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
@@ -56,7 +52,7 @@ public class DataDriven_Lib  extends ExcelDataProvider{
         
 	}
 	
-	@BeforeClass
+    @BeforeClass
 	public String setup() {
 		
 		String accessToken = AuthenticationDemo.setup();
@@ -124,7 +120,7 @@ public class DataDriven_Lib  extends ExcelDataProvider{
 				
 	}
 	
-	@Test
+	@Test(groups={"smoke"})
 	void test_getByUserID() {
 		
 		test =extent.createTest("TC-2 Get valid response","Test Passed");
